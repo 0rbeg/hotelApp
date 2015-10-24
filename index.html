@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HotelApp</title> 
+        <meta name="viewport" content="width=device-width, initial-scale=2">
+        
+        <link href="css/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        
+       <div data-role="page" id="home">
+	   <div data-role="header">
+           <h1>HotelApp</h1>
+       </div>
+	   <div role="main" class="ui-content">
+            <ul data-role="listview" data-inset="true">
+            <li><a href="#nr1">Nueva Reserva</a></li>
+            <li><a href="#historial">Historial</a></li>
+            </ul>
+       </div>
+	   <div data-role="footer" data-position="fixed">
+           <small style="font-size:8pt">   Todos los derechos reservados &copy; 2015</small>           
+           <a href="#nosotros" data-transition="slideup">Nosotros </a>
+       </div>
+       </div>
+        
+       <div data-role="page" id="nosotros">
+            <div data-role="header">
+                <h1>Nosotros</h1>   
+                <a href="#" data-rel="back">Atras</a>
+            </div>
+            <div role="main" class="ui-content">
+                <p style="text-align:justify;">
+             We didn't want to keep you waiting for all the good stuff, so we've published some key resources to get you going. If you are new to PhoneGap, we recommend beginning by working through our Getting Started Guide. We've also put together a helpful tutorial on extending our "Hello World" example app. These should get you going, and keep your eyes peeled for new material to come soon.
+             </p>    
+            </div>    
+        </div >
+        
+       <div data-role="page" id="registro">
+	   <div data-role="header">
+        <h1>Registro</h1>
+       </div>
+	   <div role="main" class="ui-content">
+            <ul data-role="listview">
+            <li data-role="list-divider">Datos Personales</li>
+            <li><input type ="text" id="regNom" placeholder="Nombre"> </li>
+            <li><input type ="tel" id="regTel" placeholder="Telefono"> </li>    
+            <li><input type ="email" id="regMail" placeholder="e-Mail"> </li>    
+            <li><a href="#" id="tomarFoto">Tomar Foto</a> </li>
+            <li id="fotoTomada"></li>    
+            </ul>
+           <!--<div id="regPhoto"> </div> -->
+       </div>
+	   <div data-role="footer" data-position="fixed">
+           <div data-role="navbar">
+            <ul>
+                <li><a href="#" class="ui-btn-active" id ="regSend">Registrar</a></li>
+            </ul>
+           </div><!-- /navbar -->
+       </div>
+       </div>
+        
+ 
+        <script type="text/javascript" src="phonegap.js"></script>
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/actions.js"></script>
+        <script src="js/API/fileTransfer.js"></script>
+        <script src="js/API/camara.js"></script>
+        
+    </body>
+</htm>    
+
