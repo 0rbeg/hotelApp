@@ -1,7 +1,8 @@
 var fn = {
 	init: function(){
 		if(!fn.islogged())
-			window.location.href = "#reg";
+			//window.location.href = "#reg";
+            alert('Aqui!!');
 		
 		//Funcionalidades de Registro
 		$('#regSend').click(fn.getRegister);
@@ -26,4 +27,5 @@ var fn = {
 	}
 };
 
-$(fn.ready);
+//$(fn.ready);
+$(fn.init);
