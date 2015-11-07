@@ -48,7 +48,7 @@
 				</div><!-- /navbar -->
 			</div>
 		</div>
-        <!-- Pagina2-->
+        <!-- Pagina1-->
 		<div data-role="page" id="nr1">
 			<div data-role="header">
                  <h1>Reserva</h1></div>
@@ -63,13 +63,13 @@
             <div data-role="footer">
                 <div data-role="navbar">    
                     <ul >
-                        <li><a href="#">Cancelar</a></li> 
+                        <li><a href="#" data-rel="back">Cancelar</a></li> 
                         <li><a href="#">Siguiente</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        
+        <!-- Pagina2-->
         <div data-role="page" id="nr2">
             <div data-role="header">
                 <h1>Reserva</h1> 
@@ -78,7 +78,7 @@
                 <ui data-role="list-view">
                     <li data-role="list-divider">Selecciona datos extras:</li>
                     <li>Peronas:
-                        <select>
+                        <select id="numPerosnas">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -86,7 +86,7 @@
                         </select>
                     </li>
                     <li>Habitaciones
-                        <select>
+                        <select id="numHabitaciones">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -94,7 +94,7 @@
                         </select>
                     </li>
                     <li>Dias
-                        <select>
+                        <select id="numDias">
                             <option>1</option>
                             <option>2</option>
                             <option>3</option>
@@ -118,13 +118,17 @@
         </div>
         
 		
-		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="phonegap.js"></script>
+        <script src="js/jquery-1.11.3.min.js"></script>
 		<script src="js/jquery.mobile-1.4.5.min.js"></script>
         <script src="js/API/mediaCapture.js"></script>
 		<script src="js/API/fileTransfer.js"></script>
+        <script src="js/API/network-information.js"></script>
 		<script src="js/actions.js"></script>
 		<script src="js/server.js"></script>
+        <script src="js/reservas.js"></script>
         <script src="js/localStorage.js"></script>
+        
 		
         
 	</body>
