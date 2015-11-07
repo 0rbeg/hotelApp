@@ -48,16 +48,84 @@
 				</div><!-- /navbar -->
 			</div>
 		</div>
-		
+        <!-- Pagina2-->
+		<div data-role="page" id="nr1">
+			<div data-role="header">
+                 <h1>Reserva</h1></div>
+			<div role="main" class="ui-content">
+                <ul data-role="listview">
+                    <li data-role="list-divider">Selecciona el tipo de habitación</li>
+                    <li><a href="#">Sencilla</a></li>
+                    <li><a href="#">Doble</a></li>
+                    <li><a href="#">Suite</a></li>                    
+                </ul>
+            </div>
+            <div data-role="footer">
+                <div data-role="navbar">    
+                    <ul >
+                        <li><a href="#">Cancelar</a></li> 
+                        <li><a href="#">Siguiente</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         
-		<script src="phonegap.js"></script>
+        <div data-role="page" id="nr2">
+            <div data-role="header">
+                <h1>Reserva</h1> 
+            </div>
+            <div role="main" class="ui-content">
+                <ui data-role="list-view">
+                    <li data-role="list-divider">Selecciona datos extras:</li>
+                    <li>Peronas:
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </li>
+                    <li>Habitaciones
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </li>
+                    <li>Dias
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </li>                    
+                </ui>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li>
+                            <a href="#" class="ui-btn-active">
+                                Reservar
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+		
 		<script src="js/jquery-1.11.3.min.js"></script>
 		<script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/API/mediaCapture.js"></script>
+		<script src="js/API/fileTransfer.js"></script>
 		<script src="js/actions.js"></script>
 		<script src="js/server.js"></script>
         <script src="js/localStorage.js"></script>
-		<script src="js/API/mediaCapture.js"></script>
-		<script src="js/API/fileTransfer.js"></script>
+		
         
 	</body>
 </html>
