@@ -52,7 +52,7 @@ var fn = {
         var nh = $("#numHabitaciones").val();
         var nd = $("#numDias").val();
         
-        if(conexion.estaConectado(){
+        if(conexion.estaConectado()){
             //Enviar información al servidor
            server.envRes(th,np,nh,nd);
         }else{
@@ -64,8 +64,8 @@ var fn = {
         }
         
     }
-}
 };
+
     
-$(fn.ready);
-//$(fn.init);
+//$(fn.ready);
+$(fn.init);
