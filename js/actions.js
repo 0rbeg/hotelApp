@@ -10,7 +10,7 @@ var fn = {
 		$('#takePhoto').click(mediaCapture.takePhoto);
         $('#nr1 ul[data-role=listview] a').click(fn.seleccionarTipo);
         $('#nr1 div[data-role=navbar] li').click(fn.nr1Siguiente);
-        /*$('#nr2 div[data-role=navbar] li').click(fn.nr2Reservar);*/
+        $('#nr2 div[data-role=navbar] li').click(fn.nr2Reservar);
 	},
 	ready:function(){
 		document.addEventListener("deviceready", fn.init, false);
@@ -59,13 +59,10 @@ var fn = {
             //almacenar en el dispositivo
            $.mobile.loading("show");
            almacen.guardarReserva(th,np,nh,nd);
-           $.mobile.loading("hide");
-               
-        }
-        
+           $.mobile.loading("hide");               
+        }        
     }
 };
-
     
 $(fn.ready);
 //$(fn.init);
