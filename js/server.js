@@ -22,8 +22,10 @@ var server = {
 			data: { tipo: th, nump: np, numh: nh, dias:nd }
 		}).done(function(respuesta){
             $.mobile.loading("hide");
+alert("prueba del servidor");            
             if(respuesta == "1" ){
                 //Agregar al historial de reservas
+                alert("exito, sus datos se han guardado en el servidor");
                 
             }else{
                 alert("error al guardar los datos en el servidor");
