@@ -5,7 +5,7 @@ var fn = {
            
 		
 		//Funcionalidades de Registro
-        window.location.href = "#nr1";
+//        window.location.href = "#nr1";
 		$('#regSend').click(fn.getRegister);
 		$('#takePhoto').click(mediaCapture.takePhoto);
         $('#nr1 ul[data-role=listview] a').click(fn.seleccionarTipo);
@@ -64,5 +64,5 @@ var fn = {
     }
 };
     
-$(fn.ready);
-//$(fn.init);
+//$(fn.ready);
+$(fn.init);
