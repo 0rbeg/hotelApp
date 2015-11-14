@@ -14,22 +14,22 @@ var server = {
 		}else
 			navigator.notification.alert("Hubo un error al enviar los datos", null, "Error al enviar datos", "Aceptar");
 	},
-    envRes: function(th,np,nh,nd){
-        $.mobile.loading("show");
-        $.ajax({
+	envRes: function(th, np, nh, nd){
+		$.mobile.loading("show");
+		$.ajax({
 			method: "POST",
 			url: "http://carlos.igitsoft.com/apps/test.php",
-			data: { tipo: th, nump: np, numh: nh, dias:nd }
+			data: { tipo: th, nump: np, numh: nh, dias: nd }
 		}).done(function(respuesta){
-            $.mobile.loading("hide");
-alert("prueba del servidor");            
-            if(respuesta == "1" ){
-                //Agregar al historial de reservas
-                alert("exito, sus datos se han guardado en el servidor");
-                
-            }else{
-                alert("error al guardar los datos en el servidor");
-            }
-        });
-    }
+			$.mobile.loading("hide");
+alert("Prueba registro en servidor");
+			if(respuesta == "1"){
+				// Agregar al historial de Reservas
+				alert("Exito, sus datos se han guardado en el servidor");
+
+			}else{
+				alert("Error al guardar datos en el servidor");
+			}
+		});
+	}
 };
