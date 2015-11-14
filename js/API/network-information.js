@@ -6,7 +6,7 @@ var conexion = {
 		},
 		
 		eventoConectado:function() {
-            document.addEventListener("online",almcen.syncData,false);
+            document.addEventListener("online",almacen.syncData,false);
         }
 		
 	}
