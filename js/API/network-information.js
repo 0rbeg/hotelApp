@@ -3,11 +3,10 @@ var conexion = {
 		if(navigator.connection.type != Connection.NONE){
 			return true;
 
-		},
-		
-		eventoConectado:function() {
+		}
+    },
+    eventoConectado:function() {
             document.addEventListener("online",almacen.syncData,false);
         }
 		
 	}
-}
