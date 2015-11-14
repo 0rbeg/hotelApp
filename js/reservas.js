@@ -26,7 +26,7 @@ var almacen = {
 		tx.executeSql("INSERT INTO reservas (th, np, nh, nd) VALUES ('"+almacen.th+"','"+almacen.np+"','"+almacen.nh+"','"+almacen.nd+"')");
 //alert("Reserva guardada en BD");
 	},
-    tablaReserva: function(tx){
+    tablaHistorial: function(tx){
 //alert("Guardando reserva");
 		tx.executeSql("CREATE TABLE IF NOT EXISTS historial (th, np, nh, nd)");
 		tx.executeSql("INSERT INTO historial (th, np, nh, nd) VALUES ('"+almacen.th+"','"+almacen.np+"','"+almacen.nh+"','"+almacen.nd+"')");
@@ -50,14 +50,13 @@ var almacen = {
         tx.executeSql("SELECT * FROM reservas",[],function(tx2,response){
             for (i=0;i<response.rows.length;i++){
                 server.envRes(response.rows.item(i).th,response.rows.item(i).np,response.rows.item(i).nh,response.rows.item(i).nd);
-                //inserta Historial
-                alert("Guardando en el historial");
+                
                 almacen.guardarHistorial(response.rows.item(i).th,response.rows.item(i).np,response.rows.item(i).nh,response.rows.item(i).nd);
                 
             } tx2.executeSql("DELETE FROM reservas"); },almacen.error);
         
     },
     reservaLeida:function(){
-        alert("Reserva Leida");
+        alert("Reservas Sincronizadas");
     }
 }
