@@ -2,7 +2,7 @@ var fn = {
 	init: function(){
 		if(!fn.islogged())
 			window.location.href = "#reg";
-        window.location.href = "#reservas";
+        //window.location.href = "#reservas";
 
     		 
 		//Funcionalidades de Registro
